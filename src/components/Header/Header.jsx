@@ -1,19 +1,18 @@
 import React from 'react';
 import { useTelegram } from '.../Button/Button';
 
-const header = () => {
+const Header = () => {
 
 
     const {user, onClose} = useTelegram();
 
     return (
-        <div>
-
-            <button onClick={onClose}>Закрыть</button>
+        <div className={'header'}>
+            <Button onClick={onClose}>Закрыть</Button>
             <span className={'username'}> {user?.username} </span>
 
         </div>
     );
 };
 
-export default header;
+export default Header;
