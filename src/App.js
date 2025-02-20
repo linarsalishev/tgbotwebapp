@@ -1,7 +1,7 @@
 import './App.css';
-import { useEffect } from "react";
-import { useTelegram } from "./hooks/useTelegram";
-import Header from "./components/Header/Header";
+import {useEffect} from "react";
+import {useTelegram} from "./hooks/useTelegram";
+import Header from "scr/components/Header/Header";
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     tg.ready();
-  }, []) 
+  },    []) 
 
 
 const onClose = () => {
